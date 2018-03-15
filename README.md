@@ -34,11 +34,14 @@ expect(element).toContainSelector('CustomComponent'); // search by name, useful 
 expect(element).toContainSelector(CustomComponent); // search by component class
 expect(element).toContainSelector('a[href="/target"]'); // attribute selectors
 expect(element).toContainSelector(`img[src="${testImageUrl}"]`); // interpolated selectors
+expect(element).not.toContainSelector('button'); // negation
 ```
 
 ...and anything else supported by the `.find` method.
 
 The library also provides the matcher `.toIncludeSelector`, which uses `.filter` rather than `.find`. This can be useful if the wrapper you're asserting on contains multiple elements and you want to be able to find them at the top level (e.g. children of a `React.fragment`).
+
+Internally the matchers use `.find`/`.filter` and check that at least one element is found. If no elements are found and the assertion fails, the failure output will take a stab at finding similar elements (by simplifying the selector).
 
 ## License
 
