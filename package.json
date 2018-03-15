@@ -29,5 +29,5 @@
     "setupTestFrameworkScriptFile": "<rootDir>/testSetup.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "Unlicense"
 }
