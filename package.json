@@ -2,7 +2,7 @@
   "name": "jest-enzyme-selector-matchers",
   "version": "1.0.0",
   "description": "",
-  "main": "setupTests.js",
+  "main": "matchers.js",
   "dependencies": {
     "babel-preset-react": "^6.24.1",
     "enzyme": "^3.3.0",
@@ -16,6 +16,9 @@
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   },
+  "files": [
+    "matchers.js"
+  ],
   "scripts": {
     "test": "jest"
   },
