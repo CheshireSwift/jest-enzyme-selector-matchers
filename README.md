@@ -17,7 +17,7 @@ npm install --save-dev cheerio
 
 Finally, you'll need to require the module and extend Jest's expectations:
 
-```
+```js
 const selectorMatchers = require('jest-enzyme-selector-matchers');
 
 expect.extend(selectorMatchers);
@@ -27,7 +27,7 @@ expect.extend(selectorMatchers);
 
 Given an Enzyme wrapper `element` (anything with a `.find` method) you can make assertions such as:
 
-```
+```js
 expect(element).toContainSelector('button'); // basic search
 expect(element).toContainSelector('div.myStyling'); // class selectors
 expect(element).toContainSelector('CustomComponent'); // search by name, useful for shallow wrappers
