@@ -9,13 +9,8 @@ npm install --save-dev jest-enzyme-selector-matchers
 ```
 
 These matchers assume the existence of Jest and Enzyme (unsurprisingly).
-They also have an explicit peer dependency on Cheerio for the output logging, so you will probably want to explicitly install that too (despite it already being present in Enzyme):
 
-```
-npm install --save-dev cheerio
-```
-
-Finally, you'll need to require the module and extend Jest's expectations:
+You'll also need to require the module and extend Jest's expectations:
 
 ```js
 const selectorMatchers = require('jest-enzyme-selector-matchers');
