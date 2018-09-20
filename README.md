@@ -1,5 +1,7 @@
 # jest-enzyme-selector-matchers
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/CheshireSwift/jest-enzyme-selector-matchers.svg)](https://greenkeeper.io/)
+
 Jest matchers for asserting on the existence of elements matching selectors.
 
 ## Installation
